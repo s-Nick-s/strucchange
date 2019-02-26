@@ -1,4 +1,6 @@
+useDynLib(strucchange, .registration=TRUE)
 import("stats", "graphics", "zoo", "sandwich")
+importFrom(Rcpp, evalCpp)
 
 export(
 ## testing

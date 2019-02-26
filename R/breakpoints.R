@@ -80,21 +80,38 @@ breakpoints.formula <- function(formula, h = 0.15, breaks = NULL,
 
   ## breaks >= 2
 
+  # extend.RSS.table <- function(RSS.table, breaks)
+  # {
+  #   if ((breaks*2) > ncol(RSS.table)) {
+  #     for (m in (ncol(RSS.table)/2 + 1):breaks)
+  #     {
+  #       my.index <- (m*h):(n - h)
+  #       my.RSS.table <- RSS.table[,c((m - 1)*2 - 1, (m - 1)*2)]
+  #       my.RSS.table <- cbind(my.RSS.table, NA, NA)
+  #       for (i in my.index)
+  #       {
+  #         pot.index <- ((m - 1)*h):(i - h)
+  #         break.RSS <- sapply(pot.index, function(j) my.RSS.table[as.character(j), 2] + RSS(j + 1,i))
+  #         opt <- which.min(break.RSS)
+  #         my.RSS.table[as.character(i), 3:4] <- c(pot.index[opt], break.RSS[opt])
+  #       }
+  #       RSS.table <- cbind(RSS.table, my.RSS.table[,3:4])
+  #     }
+  #     colnames(RSS.table) <- as.vector(rbind(paste("break", 1:breaks, sep = ""),
+  #                                            paste("RSS", 1:breaks, sep = "")))
+  #   }
+  #   return(RSS.table)
+  # }
+  
   extend.RSS.table <- function(RSS.table, breaks)
   {
-    if((breaks*2) > ncol(RSS.table)) {
-      for(m in (ncol(RSS.table)/2 + 1):breaks)
+    if ((breaks*2) > ncol(RSS.table)) {
+      for (m in (ncol(RSS.table)/2 + 1):breaks)
       {
-        my.index <- (m*h):(n-h)
-        my.RSS.table <- RSS.table[,c((m-1)*2 - 1, (m-1)*2)]
+        my.index <- (m*h):(n - h)
+        my.RSS.table <- RSS.table[,c((m - 1)*2 - 1, (m - 1)*2)]
         my.RSS.table <- cbind(my.RSS.table, NA, NA)
-        for(i in my.index)
-        {
-          pot.index <- ((m-1)*h):(i - h)
-          break.RSS <- sapply(pot.index, function(j) my.RSS.table[as.character(j), 2] + RSS(j+1,i))
-          opt <- which.min(break.RSS)
-          my.RSS.table[as.character(i), 3:4] <- c(pot.index[opt], break.RSS[opt])
-        }
+        my.RSS.table <- fillMyRSStable(my.RSS.table, RSS.triang, my.index, m, h)
         RSS.table <- cbind(RSS.table, my.RSS.table[,3:4])
       }
       colnames(RSS.table) <- as.vector(rbind(paste("break", 1:breaks, sep = ""),
