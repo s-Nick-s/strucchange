@@ -62,7 +62,8 @@ export(
   "monitorMECritvalTable",
   "monitorRECritval",
   "monitorRECritvalData",
-  "monitorRECritvalTable")
+  "monitorRECritvalTable",
+  "fillMyRSStable")
 
 ## methods to new generics
 S3method("sctest", "default")
