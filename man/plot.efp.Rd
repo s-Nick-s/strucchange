@@ -54,7 +54,7 @@ constancy, \emph{Biometrika}, \bold{82}, 603-617.
 Chu C.-S., Hornik K., Kuan C.-M. (1995), The moving-estimates test for
 parameter stability, \emph{Econometric Theory}, \bold{11}, 669-720.
 
-Krämer W., Ploberger W., Alt R. (1988), Testing for structural change in
+Kr?mer W., Ploberger W., Alt R. (1988), Testing for structural change in
 dynamic models, \emph{Econometrica}, \bold{56}, 1355-1369.
 
 Kuan C.-M., Hornik K. (1995), The generalized fluctuation test: A
@@ -64,10 +64,10 @@ Kuan C.-M., Chen (1994), Implementing the fluctuation and moving estimates
 tests in dynamic econometric models, \emph{Economics Letters}, \bold{44},
 235-239.
 
-Ploberger W., Krämer W. (1992), The CUSUM test with OLS residuals,
+Ploberger W., Kr?mer W. (1992), The CUSUM test with OLS residuals,
 \emph{Econometrica}, \bold{60}, 271-285.
 
-Zeileis A., Leisch F., Hornik K., Kleiber C. (2002), \code{strucchange}:
+Zeileis A., Leisch F., Hornik K., Kleiber C. (2002), \code{strucchangeC}:
 An R Package for Testing for Structural Change in Linear Regression Models,
 \emph{Journal of Statistical Software}, \bold{7}(2), 1-38.
 URL \url{http://www.jstatsoft.org/v07/i02/}.

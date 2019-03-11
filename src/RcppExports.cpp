@@ -7,7 +7,7 @@ using namespace Rcpp;
 
 // fillMyRSStable
 NumericMatrix fillMyRSStable(NumericMatrix myRSStable, List& RSStriang, IntegerVector& myIndex, int m, float h);
-RcppExport SEXP _strucchange_fillMyRSStable(SEXP myRSStableSEXP, SEXP RSStriangSEXP, SEXP myIndexSEXP, SEXP mSEXP, SEXP hSEXP) {
+RcppExport SEXP _strucchangeC_fillMyRSStable(SEXP myRSStableSEXP, SEXP RSStriangSEXP, SEXP myIndexSEXP, SEXP mSEXP, SEXP hSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -22,11 +22,11 @@ END_RCPP
 }
 
 static const R_CallMethodDef CallEntries[] = {
-    {"_strucchange_fillMyRSStable", (DL_FUNC) &_strucchange_fillMyRSStable, 5},
+    {"_strucchangeC_fillMyRSStable", (DL_FUNC) &_strucchangeC_fillMyRSStable, 5},
     {NULL, NULL, 0}
 };
 
-RcppExport void R_init_strucchange(DllInfo *dll) {
+RcppExport void R_init_strucchangeC(DllInfo *dll) {
     R_registerRoutines(dll, NULL, CallEntries, NULL, NULL);
     R_useDynamicSymbols(dll, FALSE);
 }

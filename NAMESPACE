@@ -1,4 +1,4 @@
-useDynLib(strucchange, .registration=TRUE)
+useDynLib(strucchangeC, .registration=TRUE)
 import("stats", "graphics", "zoo", "sandwich")
 importFrom(Rcpp, evalCpp)
 

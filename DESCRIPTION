@@ -1,4 +1,4 @@
-Package: strucchange
+Package: strucchangeC
 Version: 1.5-1
 Date: 2015-06-06
 Title: Testing, Monitoring, and Dating Structural Changes
@@ -9,7 +9,7 @@ Authors@R: c(person(given = "Achim", family = "Zeileis", role = c("aut", "cre"),
 	     person(given = "Bruce", family = "Hansen", role = "ctb"),
 	     person(give = c("Edgar", "C."), family = "Merkle", role = "ctb"))
 Description: Testing, monitoring and dating structural changes in (linear)
-             regression models. strucchange features tests/methods from
+             regression models. strucchangeC features tests/methods from
 	     the generalized fluctuation test framework as well as from
 	     the F test (Chow test) framework. This includes methods to
 	     fit, plot and test fluctuation processes (e.g., CUSUM, MOSUM,

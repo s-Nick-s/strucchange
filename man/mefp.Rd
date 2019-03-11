@@ -86,7 +86,7 @@ monitor(obj, data = NULL, verbose = TRUE)
   The recursive
   estimates test is also called fluctuation test, therefore setting \code{type}
   to \code{"fluctuation"} was used to specify it in earlier versions of
-  strucchange. It still can be used now, but will be forced to \code{"RE"}
+  strucchangeC. It still can be used now, but will be forced to \code{"RE"}
 }
 \seealso{\code{\link{plot.mefp}}, \code{\link{boundary.mefp}}}
 \references{

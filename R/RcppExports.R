@@ -2,6 +2,6 @@
 # Generator token: 10BE3573-1514-4C36-9D1C-5A225CD40393
 
 fillMyRSStable <- function(myRSStable, RSStriang, myIndex, m, h) {
-    .Call(`_strucchange_fillMyRSStable`, myRSStable, RSStriang, myIndex, m, h)
+    .Call(`_strucchangeC_fillMyRSStable`, myRSStable, RSStriang, myIndex, m, h)
 }
 

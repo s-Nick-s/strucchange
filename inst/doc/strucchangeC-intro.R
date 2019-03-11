@@ -1,9 +1,9 @@
-### R code from vignette source 'strucchange-intro.Rnw'
+### R code from vignette source 'strucchangeC-intro.Rnw'
 
 ###################################################
 ### code chunk number 1: data
 ###################################################
-library("strucchange")
+library("strucchangeC")
 data("USIncExp")
 plot(USIncExp, plot.type = "single", col = 1:2, ylab = "billion US$")
 legend(1960, max(USIncExp), c("income", "expenditures"),
@@ -13,7 +13,7 @@ legend(1960, max(USIncExp), c("income", "expenditures"),
 ###################################################
 ### code chunk number 2: subset
 ###################################################
-library("strucchange")
+library("strucchangeC")
 data("USIncExp")
 USIncExp2 <- window(USIncExp, start = c(1985,12))
 

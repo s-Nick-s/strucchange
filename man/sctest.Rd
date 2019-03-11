@@ -18,7 +18,7 @@ sctest(x, \dots)
 
 \details{
 \code{sctest} is a generic function for performing/extracting structural
-change tests based on various types of objects. The \code{strucchange} package
+change tests based on various types of objects. The \code{strucchangeC} package
 provides various types of methods.
 
 First, structural change tests based on
@@ -41,7 +41,7 @@ in linear regression models and general parametric models are provided in
 }
 
 \references{
-Zeileis A., Leisch F., Hornik K., Kleiber C. (2002), \code{strucchange}:
+Zeileis A., Leisch F., Hornik K., Kleiber C. (2002), \code{strucchangeC}:
 An R Package for Testing for Structural Change in Linear Regression Models,
 \emph{Journal of Statistical Software}, \bold{7}(2), 1-38.
 URL \url{http://www.jstatsoft.org/v07/i02/}.

@@ -44,19 +44,19 @@ pdfview={XYZ null null null}%
 \begin{document}
 
 \SweaveOpts{engine=R,eps=FALSE}
-%\VignetteIndexEntry{strucchange: An R Package for Testing for Structural Change in Linear Regression Models}
-%\VignetteDepends{strucchange}
+%\VignetteIndexEntry{strucchangeC: An R Package for Testing for Structural Change in Linear Regression Models}
+%\VignetteDepends{strucchangeC}
 %\VignetteKeywords{structural change, CUSUM, MOSUM, recursive estimates, moving estimates, monitoring, R, S}
-%\VignettePackage{strucchange}
+%\VignettePackage{strucchangeC}
 
-\title{\texttt{strucchange}: An \textsf{R}  Package for Testing for Structural
+\title{\texttt{strucchangeC}: An \textsf{R}  Package for Testing for Structural
 Change in Linear Regression Models}
 \author{Achim Zeileis \hspace{0.4cm} Friedrich Leisch \hspace{0.4cm} Kurt Hornik \hspace{0.4cm} Christian Kleiber}
 \date{}
 \maketitle
 
 \begin{abstract}
-This introduction to the \textsf{R} package \texttt{strucchange} is a (slightly)
+This introduction to the \textsf{R} package \texttt{strucchangeC} is a (slightly)
 modified version of
 \cite{Z-papers:Zeileis+Leisch+Hornik:2002}, which
 reviews tests for structural change in linear regression models from
@@ -71,7 +71,7 @@ and \cite{Z-papers:Zeileis+Shah+Patnaik:2010}.
 Here, we focus on the linear regression model and
 introduce a unified approach for implementing tests from the fluctuation test
 and $F$~test framework for this model, illustrating how this approach
-has been realized in {\tt strucchange}.
+has been realized in {\tt strucchangeC}.
 Enhancing the standard significance test approach the package contains
 methods to fit, plot and test empirical fluctuation processes (like CUSUM, MOSUM
 and estimates-based processes) and to compute, plot and test
@@ -111,7 +111,7 @@ testing problem will be specified. Section~\ref{sec:data} introduces a data set
 which is also available in the package and which is used for the
 examples in this paper. The following sections \ref{sec:fluctests},
 \ref{sec:Ftests} and \ref{sec:monitor} will then explain the tests, how they are
-implemented in {\tt strucchange} and give examples for each. Section
+implemented in {\tt strucchangeC} and give examples for each. Section
 \ref{sec:fluctests} is concerned with computing empirical fluctuation processes,
 with plotting them and the corresponding boundaries and finally with testing for
 structural change based on these processes. Analogously,
@@ -181,7 +181,7 @@ economic times series. Both time series are depicted in Figure
 \begin{figure}[htbp]
 \begin{center}
 <<data,fig=TRUE,height=4,width=6,echo=FALSE,results=hide>>=
-library("strucchange")
+library("strucchangeC")
 data("USIncExp")
 plot(USIncExp, plot.type = "single", col = 1:2, ylab = "billion US$")
 legend(1960, max(USIncExp), c("income", "expenditures"),
@@ -193,10 +193,10 @@ expenditures in the US}
 \end{figure}
 
 The data is
-available in the {\tt strucchange} package: it can be loaded and a
+available in the {\tt strucchangeC} package: it can be loaded and a
 suitable subset chosen by
 <<subset>>=
-library("strucchange")
+library("strucchangeC")
 data("USIncExp")
 USIncExp2 <- window(USIncExp, start = c(1985,12))
 @
@@ -797,7 +797,7 @@ second around 1998.
 
 \section{Conclusions} \label{sec:conclusions}
 
-In this paper, we have described the {\tt strucchange} package that implements
+In this paper, we have described the {\tt strucchangeC} package that implements
 methods for testing for structural change in linear regression relationships.
 It provides a unified framework for displaying information
 about structural changes flexibly and for assessing their significance
@@ -813,12 +813,12 @@ statistics with the corresponding boundary can be computed, plotted and tested.
 Finally the methods for estimates-based fluctuation processes have extensions to
 monitor incoming data.
 
-In addition to these methods for the linear regression model, the \texttt{strucchange}
+In addition to these methods for the linear regression model, the \texttt{strucchangeC}
 package contains infrastructure for testing, monitoring, and dating structural
 changes in other parametric models, e.g., estimated by maximum likelihood. Details
 about the underlying theory can be found in \cite{Z-papers:Zeileis:2005},
 \cite{Z-papers:Zeileis+Hornik:2007}, and \cite{Z-papers:Zeileis+Shah+Patnaik:2010}.
-The corresponding functions in \texttt{strucchange} are presented in
+The corresponding functions in \texttt{strucchangeC} are presented in
 \cite{Z-papers:Zeileis+Kleiber+Kraemer:2003} and \cite{Z-papers:Zeileis:2006}.
 
 
@@ -830,7 +830,7 @@ Information Systems and Modeling in Economics and Management Science').\\
 The work of Christian Kleiber was supported by the
 Deutsche Forschungsgemeinschaft, Sonderforschungsbereich 475.
 
-\bibliography{strucchange}
+\bibliography{strucchangeC}
 \bibliographystyle{abbrvnat}
 
 \newpage
@@ -840,7 +840,7 @@ Deutsche Forschungsgemeinschaft, Sonderforschungsbereich 475.
 An important and useful tool concerning significance tests are $p$ values,
 especially for application in a software package. Their implementation is
 therefore crucial and in this section we will give more detail about the
-implementation in the {\tt strucchange} package.\\
+implementation in the {\tt strucchangeC} package.\\
 
 For the CUSUM tests with linear boundaries there are rather good
 approximations to the asymptotic $p$ value functions given in

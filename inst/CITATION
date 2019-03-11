@@ -1,7 +1,7 @@
-citHeader("There are several publications about strucchange which describe different aspects of the software. The main reference is the JSS paper.")
+citHeader("There are several publications about strucchangeC which describe different aspects of the software. The main reference is the JSS paper.")
 
 citEntry(entry="Article",
-         title = "strucchange: An R Package for Testing
+         title = "strucchangeC: An R Package for Testing
                   for Structural Change in Linear Regression Models",
          author = personList(as.person("Achim Zeileis"), 
                              as.person("Friedrich Leisch"),
@@ -16,10 +16,10 @@ citEntry(entry="Article",
          
          textVersion = 
          paste("Achim Zeileis, Friedrich Leisch, Kurt Hornik and Christian Kleiber (2002).", 
-               "strucchange: An R Package for Testing for Structural Change in Linear Regression Models.",
+               "strucchangeC: An R Package for Testing for Structural Change in Linear Regression Models.",
                "Journal of Statistical Software, 7(2), 1-38.",
 	       "URL http://www.jstatsoft.org/v07/i02/"),
-	 header = "To cite strucchange in publications use:"
+	 header = "To cite strucchangeC in publications use:"
 )
 
 citEntry(entry="Article",

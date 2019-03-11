@@ -1,4 +1,4 @@
-\name{strucchange.internal}
+\name{strucchangeC.internal}
 \alias{sc.beta.sup}
 \alias{sc.beta.ave}
 \alias{sc.beta.exp}
@@ -14,7 +14,7 @@
 \alias{monitorRECritvalData}
 \alias{monitorRECritvalTable}
 \alias{pargmaxV}
-\title{Internal strucchange objects}
+\title{Internal strucchangeC objects}
 \description{
   These are not to be called by the user.
 }

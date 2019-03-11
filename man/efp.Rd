@@ -44,7 +44,7 @@ regressors in the model, as it is based on recursive OLS estimates of the
 regression coefficients or moving OLS estimates respectively. The recursive
 estimates test is also called fluctuation test, therefore setting \code{type}
 to \code{"fluctuation"} was used to specify it in earlier versions of
-strucchange. It still can be used now, but will be forced to \code{"RE"}.
+strucchangeC. It still can be used now, but will be forced to \code{"RE"}.
 
 If \code{type} is \code{"Score-CUSUM"} or \code{"Score-MOSUM"} a \emph{k+1}-dimensional
 process will be returned, one for each score of the regression coefficients and one for
@@ -90,7 +90,7 @@ Hansen B. (1992), Testing for Parameter Instability in Linear Models,
 Hjort N.L., Koning A. (2002), Tests for Constancy of Model Parameters
 Over Time, \emph{Nonparametric Statistics}, \bold{14}, 113-132.
 
-Krämer W., Ploberger W., Alt R. (1988), Testing for structural change in
+Kr?mer W., Ploberger W., Alt R. (1988), Testing for structural change in
 dynamic models, \emph{Econometrica}, \bold{56}, 1355-1369.
 
 Kuan C.-M., Hornik K. (1995), The generalized fluctuation test: A
@@ -100,10 +100,10 @@ Kuan C.-M., Chen (1994), Implementing the fluctuation and moving estimates
 tests in dynamic econometric models, \emph{Economics Letters}, \bold{44},
 235-239.
 
-Ploberger W., Krämer W. (1992), The CUSUM test with OLS residuals,
+Ploberger W., Kr?mer W. (1992), The CUSUM test with OLS residuals,
 \emph{Econometrica}, \bold{60}, 271-285.
 
-Zeileis A., Leisch F., Hornik K., Kleiber C. (2002), \code{strucchange}:
+Zeileis A., Leisch F., Hornik K., Kleiber C. (2002), \code{strucchangeC}:
 An R Package for Testing for Structural Change in Linear Regression Models,
 \emph{Journal of Statistical Software}, \bold{7}(2), 1-38.
 URL \url{http://www.jstatsoft.org/v07/i02/}.

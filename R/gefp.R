@@ -121,7 +121,7 @@ plot.gefp <- function(x, alpha = 0.05, functional = maxBB, ...)
       "Brownian motion increments" = "BMI",
       "Brownian bridge" = "BB",
       "Brownian bridge increments" = "BBI")
-    functional <- get(paste(functional, lim.process, sep = ""), pos = "package:strucchange")
+    functional <- get(paste(functional, lim.process, sep = ""), pos = "package:strucchangeC")
   }
   if(!("efpFunctional" %in% class(functional)))
     stop(paste(dQuote("functional"), "has to be of class", sQuote("efpFunctional")))
@@ -139,7 +139,7 @@ sctest.gefp <- function(x, functional = maxBB, ...)
       "Brownian motion increments" = "BMI",
       "Brownian bridge" = "BB",
       "Brownian bridge increments" = "BBI")
-    functional <- get(paste(functional, lim.process, sep = ""), pos = "package:strucchange")
+    functional <- get(paste(functional, lim.process, sep = ""), pos = "package:strucchangeC")
   }
   if(!("efpFunctional" %in% class(functional)))
     stop(paste(dQuote("functional"), "has to be of class", sQuote("efpFunctional")))

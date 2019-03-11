@@ -1,4 +1,4 @@
-library("strucchange")
+library("strucchangeC")
 
 ## Nile data
 data("Nile")
